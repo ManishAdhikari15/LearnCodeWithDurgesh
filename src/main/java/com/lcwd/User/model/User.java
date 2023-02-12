@@ -1,12 +1,19 @@
 package com.lcwd.User.model;
 
+import lombok.*;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "user_micro")
+@Table(name = "user_tbl")
 public class User {
 
     @Id
